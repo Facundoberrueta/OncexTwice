@@ -2,6 +2,8 @@
 <html lang="es">
 
 <head>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +13,59 @@
 </head>
 
 <body>
-  <header class="navegador">
-    <a href="../index.html">
-      <img src="../img/oncextwice.jpg" alt="OncexTwice logo" width="20%" height="10%"></a>
-      <nav>
-        <ul class="menu">
-    <li class="navegador__opcion"><a href="../index.html">Inicio</a></li>
-    <li class="navegador__opcion"><a href="twice.html">Twice</a></li>
-    <li class="navegador__opcion"><a href="debut.html">Debut</a></li>
-    <li class="navegador__opcion"><a href="integrantes.html">Integrantes</a></li>
-    <li class="navegador__opcion"><a href="albumes.html">Albumes</a></li>
-    <li class="navegador__opcion"><a href="fandom.html">Fandom</a></li>
-    <li class="navegador__opcion"><a href="contacto.html">Contacto</a></li>
-  </ul>
-  </nav>
-  </header>
+  <div class="index__grid">
+    <header class="navegador">
+      <nav class="navbar navbar-expand-lg navbar-lightno bg-lightno">
+          <a href="../index.html">
+            <img src="../img/oncextwice.jpg" alt="OncexTwice logo" class="img__headerlogo"></a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menú
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="twice.html">Twice</a></li>
+                    <li><a class="dropdown-item" href="debut.html">Debut</a></li>
+                    <li><a class="dropdown-item" href="integrantes.html">Integrantes</a></li>
+                    <li><a class="dropdown-item" href="albumes.html">Albumes</a></li>
+                    <li><a class="dropdown-item" href="fandom.html">Fandom</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      </header>
   <main>
-  <hr>
-  <img src="../img/debutheader.jpg" alt="Foto de la ERA DEBUT de Twice" class="debut__imgheader">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/debutheader.jpg" class="d-block w-100" alt="Twice Debut Era">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/debutheader2.png" class="d-block w-100" alt="Twice Debut Era">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
   <h1>Debut</h1>
   <hr>
   <p>El programa titulado Sixteen comenzó el 5 de mayo y finalizó con Nayeon, Sana, Dahyun, Chaeyoung, Mina, Jihyo y
@@ -72,7 +109,7 @@
   </ul>
   </nav>
 </footer>
-
+<script src="../js/bootstrap.js"></script>
 </body>
 
 </html>

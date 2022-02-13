@@ -2,6 +2,8 @@
 <html lang="es">
 
 <head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,70 +15,116 @@
 <body>
   <div class="index__grid">
   <header class="navegador">
-    <a href="index.html">
-      <img src="img/oncextwice.jpg" alt="OncexTwice logo" class="img__headerlogo"></a>
-      <nav class="navegacion">
-        <ul class="menu">
-          <li class="navegador__opcion"><a href=#>Inicio</a></li>   
-    <li class="navegador__opcion"><a href="pages/twice.html">Twice</a></li>
-    <li class="navegador__opcion"><a href="pages/debut.html">Debut</a></li>
-    <li class="navegador__opcion"><a href="pages/integrantes.html">Integrantes</a></li>
-    <li class="navegador__opcion"><a href="pages/albumes.html">Albumes</a></li>
-    <li class="navegador__opcion"><a href="pages/fandom.html">Fandom</a></li>
-    <li class="navegador__opcion"><a href="pages/contacto.html">Contacto</a></li>
-  </ul>
+      <nav class="navbar navbar-expand-lg navbar-lightno bg-lightno">
+        <a href="index.html">
+          <img src="img/oncextwice.jpg" alt="OncexTwice logo" class="img__headerlogo"></a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Inicio</a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menú
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="pages/twice.html">Twice</a></li>
+                  <li><a class="dropdown-item" href="pages/debut.html">Debut</a></li>
+                  <li><a class="dropdown-item" href="pages/integrantes.html">Integrantes</a></li>
+                  <li><a class="dropdown-item" href="pages/albumes.html">Albumes</a></li>
+                  <li><a class="dropdown-item" href="pages/fandom.html">Fandom</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
   </header>
-  <hr>
   <main class="inicio">
-  <img src="img/header1.png" alt="Foto de las miembros de Twice" class="inicio__imagen" height="10%">
- 
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/header1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/twiceheaderindex.jpg" class="d-block w-100" alt="Foto de Twice en Formula Of ">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   <h1 class="inicio__titulo">OncexTwice</h1>
-  <hr>
-
   <p class="inicio__descripcion">&iquest;Quieres ser parte del Fandom de <b class="twicee">Twice</b>&#63; &iexcl;Bienvenido a OncexTwice&#33; Una
     página dedicado
     a
     &#40;futuros&#41;Onces.</p>
   <p class="inicio_descripcion">Dentro de este sitio podrás encontrar toda la información acerca del grupo de kpop <b class="twicee">Twice</b></p>
-<br>
-  <section class="inicio__primero">
-  <div class="menues">
-    <a href="pages/twice.html">
-      <img src="img/Twice.jpg" alt="twice"  class="menues__img"></a>
-    <br>
-    <a href="pages/twice.html">Twice</a>
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <a href="pages/twice.html">
+        <img src="img/Twice.jpg" alt="twice"  class="menues__img"></a>
+      <div class="card-body">
+        <a href="pages/twice.html" class="menues__title">Twice</a> </div>
     </div>
-  <div class="menues"><a href="pages/debut.html">
-      <img src="img/Debut.jpeg" alt="Debut"  class="menues__img"></a>
-    <br>
-    <a href="pages/debut.html">Debut</a>
   </div>
-  <div class="menues">
-    <a href="pages/integrantes.html">
-      <img src="img/Integrantes.jpg" alt="Integrantes"  class="menues__img"></a>
-    <br>
-    <a href="pages/integrantes.html">Integrantes</a>
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <a href="pages/debut.html"> <img src="img/Debut.jpeg" alt="Debut"  class="menues__img"></a>
+      <div class="card-body">
+        <a href="pages/debut.html" class="menues__title">Debut</a> </div>
     </div>
-  <div class="menues">
-    <a href="pages/albumes.html">
-      <img src="img/Albumes.png" alt="Albumes" class="menues__img"></a>
-    <br>
-    <a href="pages/albumes.html">Albumes</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <a href="pages/integrantes.html">
+        <img src="img/Integrantes.jpg" alt="Integrantes"  class="menues__img"></a>
+      <div class="card-body">
+        <a href="pages/integrantes.html" class="menues__title">Integrantes</a> </div>
     </div>
-  <div class="menues">
-    <a href="pages/fandom.html">
+  </div>
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <a href="pages/albumes.html">
+        <img src="img/Albumes.png" alt="Albumes" class="menues__img"></a>
+      <div class="card-body">
+        <a href="pages/albumes.html" class="menues__title">Albumes</a></div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+     <a href="pages/fandom.html">
       <img src="img/Fanclublogo.jpg" alt="Fandom" class="menues__img"></a>
-    <br>
-    <a href="pages/fandom.html">Fandom</a>
+      <div class="card-body">
+        <a href="pages/fandom.html" class="menues__title">Fandom</a> </div>
     </div>
-  <div class="menues">
-    <a href="pages/contacto.html">
-      <img src="img/contacto.jpg" alt="Contacto"  class="menues__img"></a>
-    <br>
-    <a href="pages/contacto.html">Contacto</a>
+  </div>
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+      <a href="pages/contacto.html">
+        <img src="img/contacto.jpg" alt="Contacto"  class="menues__img"></a>
+      <div class="card-body">
+        <a href="pages/contacto.html" class="menues__title">Contacto</a>  </div>
     </div>
-    <section>
+  </div>
+</div>
 </main>
   <footer class="footer">
     <P class="footer__creditos">&copy; Facundo Berrueta +598 92 225 895</P>
@@ -90,6 +138,7 @@
     </nav>
   </footer>
 </div>
+<script src="js/bootstrap.js"></script>
 </body>
 
 </html>
