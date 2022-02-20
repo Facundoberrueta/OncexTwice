@@ -375,9 +375,9 @@ a:hover {
   justify-content: space-around;
   align-items: stretch;
 }
-.fandom__img{
-  width: 100%;
-  height: auto;
+.fandom__foto{
+  max-width: 768px;
+  height: 20rem;
 }
   
   /* Index */
@@ -525,9 +525,9 @@ a:hover {
       justify-content: space-around;
       align-items: stretch;
     }
-    .fandom__img{
-      width: 425px;
-      height: auto;
+    .fandom__foto{
+      max-width: 425px;
+      height: 14rem;
     }
     
     /* Index */
@@ -628,10 +628,9 @@ a:hover {
     }
     
     /* Twice */
-    .twicee__img{
+    .img__twice{
       max-width: 425px;
-      max-height:570px;
-      border: 0.5rem solid #662e91;
+      height: 10rem;
     }
     .twicee__flex{
       display: grid;
