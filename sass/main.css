@@ -1,0 +1,125 @@
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto__button {
+  background-color: #662e91;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-right: 8rem;
+  margin-top: 1%;
+}
+
+.contacto__button:hover {
+  background-color: #56118b;
+}
+
+.contacto__email, .contacto__nombre, .contacto__duda {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #662e91;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: #f3c3f3;
+  text-align: center;
+  font-size: 9rem;
+  font-family: Optima;
+  text-shadow: 0.2rem 0.2rem 0.2rem #b884ca;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Optima;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  background-color: #662e91;
+}
+
+.navbar-lightno, .bg-lightno, .dropdown-menu {
+  background-color: #662e91;
+  font-family: Optima;
+  color: #f3c3f3;
+  text-decoration: none;
+  image-orientation: initial;
+}
+
+.navbar-toggler-icon, .navbar-toggler {
+  border: solid 0.1rem #f3c3f3;
+  border-radius: 25%;
+}
+
+.navbar-toggler-icon:visited, .navbar-toggler:visited {
+  border: solid 0.1rem #f3c3f3;
+  border-radius: 25%;
+}
+
+.dropdown-item:visited, .dropdown-item:visited, .nav-link:visited, .nav-link:visited, .navbar-brand:visited {
+  background-color: #662e91;
+  color: #f3c3f3;
+}
+
+.dropdown-item:hover, .dropdown-item:focus:hover, .nav-link:hover:hover, .nav-link:focus:hover, .navbar-brand:hover {
+  color: #f3c3f3;
+  background-color: #551d80;
+}
+
+a:link, .dropdown-item:link, .dropdown-item:focus:link, .nav-link:hover:link, .nav-link:focus:link {
+  text-decoration: none;
+  color: #f3c3f3;
+}
+
+a:visited {
+  color: #f3c3f3;
+}
+
+a:hover {
+  color: #b884ca;
+}
+
+.navegador__opcion {
+  display: inline;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.footer__creditos {
+  text-align: left;
+  color: #f3c3f3;
+}
+
+.img__headerlogo {
+  max-width: 14rem;
+  max-height: 7rem;
+}
+/*# sourceMappingURL=main.css.map */
