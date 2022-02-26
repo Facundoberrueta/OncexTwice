@@ -6,22 +6,28 @@
 }
 
 h1 {
-  color: #f3c3f3;
   text-align: center;
   font-size: 9rem;
   font-family: Optima;
+  color: #f3c3f3;
   text-shadow: 0.2rem 0.2rem 0.2rem #b884ca;
 }
 
 p {
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-size: 1rem;
+  font-family: Arial;
 }
 
 h3 {
   text-align: center;
   font-size: 2rem;
+  font-family: Optima;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
   font-family: Optima;
 }
 
@@ -98,7 +104,7 @@ a:visited {
 }
 
 a:hover {
-  color: #b884ca;
+  color: #551d80;
 }
 
 a:link {
@@ -172,7 +178,7 @@ a:link {
   font-size: 2rem;
 }
 
-.menues__img {
+.menues__img, .album__img, .integrantes__gif {
   width: 15rem;
   height: 15rem;
 }
@@ -230,11 +236,6 @@ a:link {
 
 .accordion-button:focus {
   border-color: #f3c3f3;
-}
-
-.album__img {
-  max-width: 15rem;
-  max-height: 15rem;
 }
 
 .album__apartado:hover {
@@ -352,11 +353,6 @@ a:link {
   margin-bottom: 7%;
   margin-top: 7%;
   text-align: center;
-}
-
-.integrantes__gif {
-  width: 15rem;
-  height: 15rem;
 }
 
 .integrantes__div {
@@ -511,7 +507,7 @@ a:link {
     max-width: 15rem;
     max-height: 7.5rem;
   }
-  .menues__img {
+  .menues__img, .album__img, .integrantes__gif {
     max-width: 15rem;
     max-height: 15rem;
   }
@@ -550,9 +546,7 @@ a:link {
     justify-items: center;
   }
   h2 {
-    text-align: center;
     font-size: 2rem;
-    font-family: Optima;
   }
   .albumes__flex {
     display: -ms-grid;
@@ -698,7 +692,7 @@ a:link {
     max-width: 9rem;
     max-height: 2.5rem;
   }
-  .menues__img {
+  .menues__img, .album__img, .integrantes__gif {
     max-width: 15rem;
     max-height: 15rem;
   }
@@ -736,11 +730,6 @@ a:link {
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
-  }
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-family: Optima;
   }
   .albumes__flex {
     display: -ms-grid;
@@ -788,7 +777,7 @@ a:link {
   .integrantes__title {
     text-align: center;
     font-size: 2rem;
-    font-style: Optima;
+    font-family: Optima;
   }
   .unorder__integrantes {
     text-align: center;
