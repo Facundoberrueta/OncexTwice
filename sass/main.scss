@@ -1,14 +1,26 @@
-*{
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
 $colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
 @mixin text($position, $fontS, $fontF){
   text-align: $position;
   font-size: $fontS;
   font-family: $fontF;
 }
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
 h1{
   @include text(center, 9rem, Optima);
   color: #f3c3f3;
@@ -119,12 +131,10 @@ color: map-get($colors, rosa);
   align-items: stretch;
 }
 .fandom__foto{
-  width: 84.3rem;
-  height: 40rem;
+  @include size(84.3rem, 40rem);
 }
 .inicio__imagen{
-  width: 100%;
-  height: 20%;
+  @include size(100%, 20%);
 }
 .menues{
   text-align: center;
@@ -133,8 +143,7 @@ color: map-get($colors, rosa);
   font-size: 2rem;
 }
 .img__headerlogo{
-  max-width: 14rem;
-  max-height: 7rem;
+  @include maxsize(14rem, 7rem);
 }
 .col-sm-6:hover{
   transform: scale(1.01, 1.01);
@@ -142,9 +151,8 @@ color: map-get($colors, rosa);
 .menues__title{
   font-size: 2rem;
 }
-.menues__img{
-  width: 15rem;
-  height: 15rem;
+.menues__img, .album__img, .integrantes__gif{
+  @include size(15rem, 15rem);
 }
 .index__grid{
   display: grid;
@@ -182,75 +190,56 @@ color: map-get($colors, rosa);
     border-color: #f3c3f3;
   }
 }
-.album__img{
-  @extend .menues__img;
-}
 .album__apartado:hover{
   transform: scale(1.1, 1.1);
 }
 .title__tsb{
-  color: #97303f;
-  text-shadow: 0.2rem 0.2rem 0.2rem #f5e8df;
+  @include titlesong(#97303f, 0.2rem 0.2rem 0.2rem #f5e8df);
 }
 .title__pt{
-  color: #23add8;
-  text-shadow: 0.1rem 0.1rem 0.1rem #79dfe8;
+  @include titlesong(#23add8, 0.1rem 0.1rem 0.1rem #79dfe8);
 }
 .title__tc{
-  color: #f15a9a;
-  text-shadow: 0.1rem 0.1rem 0.1rem #f6c69a;
+  @include titlesong(#f15a94,0.1rem 0.1rem 0.1rem #f6c69a);
 }
 .title__tcc{
-  color: #e9532a;
-  text-shadow: 0.1rem 0.1rem 0.1rem #edc066;
+  @include titlesong(#e9532a, 0.1rem 0.1rem 0.1rem #edc066);
 }
 .title__s{
-  color: #c74061;
-  text-shadow: 0.1rem 0.1rem 0.1rem #d1b19a;
+  @include titlesong(#c74061,  0.1rem 0.1rem 0.1rem #d1b19a);
 }
 .title__tt{
-  color: #66aee6;
-  text-shadow: 0.1rem 0.1rem 0.1rem #babbbb;
+  @include titlesong(#66aee6,  0.1rem 0.1rem 0.1rem #babbbb);
 }
 .title__mnh{
-  color: #077751;
-  text-shadow: 0.1rem 0.1rem 0.1rem #cbcd9e;
+  @include titlesong(#077751, 0.1rem 0.1rem 0.1rem #cbcd9e);
 }
 .title__wil{
-  color: #cc0600;
-  text-shadow: 0.1rem 0.1rem 0.1rem #ffbfb8;
+  @include titlesong(#cc0600, 0.1rem 0.1rem 0.1rem #ffbfb8);
 }
 .title__sn{
-  color: #cb293a;
-  text-shadow: 0.1rem 0.1rem 0.1rem #d09f7c;
+  @include titlesong(#cb293a, 0.1rem 0.1rem 0.1rem #d09f7c);
 }
 .title__yoy{
-  color: #d9191b;
-  text-shadow: 0.1rem 0.1rem 0.1rem #b7b5bf;
+  @include titlesong(#d9191b, 0.1rem 0.1rem 0.1rem #b7b5bf);
 }
 .title__fy{
-  color: #f539aa;
-  text-shadow: 0.1rem 0.1rem 0.1rem #e0dfe0;
+  @include titlesong(#f539aa, 0.1rem 0.1rem 0.1rem #e0dfe0);
 }
 .title__fs{
-  color: #c19a60;
-  text-shadow: 0.1rem 0.1rem 0.1rem #e4d5a9;
+  @include titlesong(#c19a60, 0.1rem 0.1rem 0.1rem #e4d5a9);
 }
 .title__mnm{
-  color: #ceb04f;
-  text-shadow: 0.1rem 0.1rem 0.1rem #d3a999;
+  @include titlesong(#ceb04f, 0.1rem 0.1rem 0.1rem #d3a999);
 }
 .title__ewo{
-  color: #3d383b;
-  text-shadow: 0.1rem 0.1rem 0.1rem #c5beb9;
+  @include titlesong(#3d383b, 0.1rem 0.1rem 0.1rem #c5beb9);
 }
 .title__tol{
-  color: #133f96;
-  text-shadow: 0.1rem 0.1rem 0.1rem #eae3dc;
+  @include titlesong(#133f96, 0.1rem 0.1rem 0.1rem #eae3dc);
 }
 .title__fol{
-  color: #1a252c;
-  text-shadow: 0.1rem 0.1rem 0.1rem #a4b7d2;
+  @include titlesong(#1a252c, 0.1rem 0.1rem 0.1rem #a4b7d2)
 }
 .song__list{
   padding: 1rem;
@@ -274,9 +263,6 @@ color: map-get($colors, rosa);
   margin-top: 7%;
   text-align: center;
 }
-.integrantes__gif{
-  @extend .menues__img;
-}
 .integrantes__div{
   border: 0.1rem #dddddd solid;
   padding: 2%;
@@ -289,8 +275,7 @@ color: map-get($colors, rosa);
   text-align: center;
 }
 .img__twice{
-  width: 100%;
-  height: 30rem;
+  @include size(100%, 30rem);
 }
 .twicee__flex{
   display: flex;
@@ -303,8 +288,7 @@ color: map-get($colors, rosa);
   align-items: stretch;
 }
 .debut__imgheader{
-  width: 84.3rem;
-  height: 30rem;
+  @include size(84.3rem, 30rem);
 }
 .debut__flex{
   display: flex;
@@ -315,8 +299,7 @@ color: map-get($colors, rosa);
   align-items: stretch;
 }
 .debut__img{
-  width: 42.1rem;
-  height: 41rem;
+  @include size(42.1rem, 41rem);
 }
 .contacto{
   display: flex;
@@ -324,10 +307,8 @@ color: map-get($colors, rosa);
   justify-content: center;
 }
 .contacto__button{
-  background-color: #662e91;
-  font-family: Arial;
+  @extend .contacto__email;
   color: #fafafa;
-  font-size: 1rem;
   padding: 0.5rem;
   margin-right: 8rem;
   margin-top: 1%;
@@ -348,38 +329,22 @@ color: map-get($colors, rosa);
   h3{
     font-size: 1rem;
     }
-  .navegador__opcion{
-    display: inline;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
   .fandom__imgheader{
     width: 100%;
     margin-bottom: 1rem;
-  }
-  .fandom__flex{
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-around;
-    align-items: stretch;
   }
   .fandom__foto{
     max-width: 768px;
     height: 20rem;
   }
   .inicio__imagen{
-    width: 100%;
-    height: 15%;
+    @include size(100%, 15%);
   }
   .img__headerlogo{
-    max-width: 15rem;
-    max-height: 7.5rem;
+    @include maxsize(15rem, 7.5rem);
   }
-  .menues__img{
-    max-width: 15rem;
-    max-height: 15rem;
+  .menues__img, .album__img{
+    @include maxsize(15rem, 15rem);
   }
   .index__grid{
     display: grid;
@@ -406,116 +371,42 @@ color: map-get($colors, rosa);
   h2{
     font-size: 2rem;
   }
-  .albumes__flex{
-    display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: 5fr;
-    grid-row-gap: 10px;
-    align-items: center;
-    justify-items: center;
-  }
-  .album__img{
-    max-width: 15rem;
-    max-height: 15rem;
-  }
   .twice__img{
     max-width: 768px;
   }
-  .integrantes__flex{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    align-content: center;
-    align-items: center;
-    padding: 2rem;
-    justify-content: space-around;
-  }
   .integrantes__gif{
-    width: 15rem;
-    height: 15rem;
-    border: 0.1rem solid black;
-  }
-  .integrantes__div{
-    border: 0.1rem solid black;
-    padding: 2%;
+    @include size(15rem, 15rem);
   }
   .twicee__img{
-    max-width: 768px;
-    max-height: 570;
+    @include maxsize(768px, 570px);
   }
-  .twicee__flex{
-    display: grid;
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .debut__imgheader{
-    width: 100%;
-    height: auto;
-  }
-  .debut__flex{
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    align-items: center;
-    padding: 0rem;
-    justify-content: center;
-    align-items: stretch;
-  }
-  .debut__img{
-    width: 100%;
-    height: auto;
+  .debut__imgheader, .debut__img{
+    @include size(100%, auto);
   }
 }
 @media screen and (max-width: 425px){
   h1{
     font-size: 4rem;
   }
-  table{
-    width: 70%;
-    margin: auto;
-    padding: auto;
-  }
-  .navegador__opcion{
-    display: block;
-    align-items: center;
-  }
   .fandom__imgheader{
     width: 100%;
     margin-bottom: 1rem;
-  }
-  .fandom__flex{
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-around;
-    align-items: stretch;
   }
   .fandom__foto{
     max-width: 425px;
     height: 14rem;
   }
-  .menu{
-    text-align: center;
-  }
   .inicio__imagen{
-    width: 100%;
-    height: 5%;
+    @include size(100%, 5%);
     padding: 0;
     margin: 0;
   }
   .img__headerlogo{
-    max-width: 9rem;
-    max-height: 2.5rem;
-  }
-  .menues__img{
-    max-width: 15rem;
-    max-height: 15rem;
+    @include maxsize(9rem, 2.5rem);
   }
   .index__grid{
     display: grid;
     grid-template-areas: "header" "section" "section" "section" "section" "section" "section" "footer";
-
     >
       .header{
         grid-area: header;
@@ -543,10 +434,6 @@ color: map-get($colors, rosa);
     align-items: center;
     justify-items: center;
   }
-  .album__img{
-    max-width: 15rem;
-    max-height: 15rem;
-  }
   .twice__img{
     max-width: 425px;
   }
@@ -559,59 +446,16 @@ color: map-get($colors, rosa);
     justify-content: space-around;
   }
   .integrantes__gif{
-    width: 15rem;
-    height: 15rem;
-    border: 0.1rem solid black;
-  }
-  .integrantes__div{
-    border: 0.1rem solid black;
-    padding: 2%;
+    @include size(15rem, 15rem);
   }
   .integrantes__title{
     @include text(center, 2rem, Optima);
-  }
-  .unorder__integrantes{
-    text-align: center;
   }
   .img__twice{
     max-width: 425px;
     height: 10rem;
   }
-  .twicee__flex{
-    display: grid;
-    align-content: space-evenly;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .debut__imgheader{
-    max-width: 100%;
-    height: auto;
-  }
-  .debut__flex{
-    display: flex;
-    flex-direction: column;
-    align-content: space-evenly;
-    align-items: center;
-    padding: 0rem;
-    justify-content: center;
-    align-items: stretch;
-  }
   .debut__img{
     max-width: 425px;
-    height: auto;
-    border: 0.5rem solid #97303f;
-  }
-  .contacto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  .contacto__button{
-    padding: 0.5rem;
-    margin-right: 0rem;
-    &:hover{
-      color: #b884ca;
-    }
   }
 }
