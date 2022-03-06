@@ -323,6 +323,9 @@ color: map-get($colors, rosa);
 }
 /* MEDIA QUERIES*/
 @media screen and (max-width: 768px){
+  main{
+    min-height: calc(100vh - 135.983px - 104px);
+   }
   h1{
     font-size: 6rem;
   }
@@ -368,6 +371,14 @@ color: map-get($colors, rosa);
     align-items: center;
     justify-items: center;
   }
+  .integrantes__flex{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-content: center;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-around;
+  }
   h2{
     font-size: 2rem;
   }
@@ -385,6 +396,9 @@ color: map-get($colors, rosa);
   }
 }
 @media screen and (max-width: 425px){
+  main{
+    min-height: calc(100vh - 93px - 128px);
+   }
   h1{
     font-size: 4rem;
   }

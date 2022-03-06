@@ -54,26 +54,18 @@
     la tendremos en cuenta&#33;</p>
   <br>
   <section class="contacto">
-    <form>
-      <label for="name" class="contacto__nombre">Nombre</label>
-      <br>
-      <input type="text" name="user_name" id="name" placeholder="Pepito" class="contacto__nombre">
-      <br>
-      <br>
-      <label for="mail" class="contacto__email">E&#45;mail</label>
-      <br>
-      <input type="email" name="mail_user" id="mail" placeholder="pepito&#64;gmail.com" class="contacto__email">
-      <br>
-      <br>
-      <label for="msg" class="contacto__duda">Duda o sugerencia</label>
-      <br>
-      <textarea name="sugerencia" id="msg" cols="30" rows="10" placeholder="Toda sugerencia es bienvenida" class="contacto__duda"></textarea>
-      <br>
-      <div class="contacto__boton">
-        <button type="reset" class="contacto__button">Reset</button>
-        <button type="submit" class="contacto__button">Enviar</button>
+    <form action="">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@ejemplo.com">
       </div>
-    </form>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Dudas o sugerencias</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+            <button type="reset" class="contacto__button">Reset</button>
+            <button type="submit" class="contacto__button">Enviar</button>
+          </form>
   </section>
 </main>
 <footer class="footer">
