@@ -1,0 +1,29 @@
+$colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
+@mixin text($position, $fontS, $fontF){
+  text-align: $position;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  .integrantes__div{
+    border: 0.1rem #dddddd solid;
+    padding: 2%;
+    margin: 3%;
+  }
+  .card:hover{
+    transform: scale(1.05, 1.05);
+  }
+  .unorder__integrantes li{
+    text-align: center;
+  }

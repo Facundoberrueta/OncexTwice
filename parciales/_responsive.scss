@@ -1,0 +1,83 @@
+$colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
+@mixin text($position, $fontS, $fontF){
+  text-align: $position;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  @media screen and (max-width: 768px){
+    main{
+      min-height: calc(100vh - 135.983px - 104px);
+     }
+    h1{
+      font-size: 6rem;
+    }
+    h3{
+      font-size: 1rem;
+      }
+    .fandom__imgheader{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .fandom__foto{
+      max-width: 768px;
+      height: 20rem;
+    }
+    .integrantes__flex{
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      align-content: center;
+      align-items: center;
+      padding: 2rem;
+      justify-content: space-around;
+    }
+    .twicee__img{
+      @include maxsize(768px, 570px);
+    }
+    .debut__imgheader, .debut__img{
+      @include size(100%, auto);
+    }
+  }
+  @media screen and (max-width: 425px){
+    main{
+      min-height: calc(100vh - 93px - 128px);
+     }
+    h1{
+      font-size: 4rem;
+    }
+    .fandom__imgheader{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .fandom__foto{
+      max-width: 425px;
+      height: 18rem;
+    }
+    .integrantes__flex{
+      display: grid;
+      grid-template-columns: 2fr;
+      align-content: center;
+      align-items: center;
+      padding: 2rem;
+      justify-content: space-around;
+    }
+    .img__twice{
+      max-width: 425px;
+      height: 10rem;
+    }
+    .debut__img{
+      max-width: 425px;
+      height: 225px;
+    }
+  }

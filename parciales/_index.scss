@@ -1,0 +1,76 @@
+$colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
+@mixin text($position, $fontS, $fontF){
+  text-align: $position;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  
+.inicio__imagen{
+    @include size(100%, 20%);
+  }
+  .menues{
+    text-align: center;
+    padding: 1rem;
+    border: 0.1rem #dddddd solid;
+    font-size: 2rem;
+  }
+  .img__headerlogo{
+    @include maxsize(14rem, 7rem);
+  }
+  .col-sm-6:hover{
+    transform: scale(1.01, 1.01);
+  }
+  .menues__title{
+    font-size: 2rem;
+  }
+  .menues__img, .album__img, .integrantes__gif{
+    @include size(15rem, 15rem);
+  }
+  .index__grid{
+    display: grid;
+    grid-template-areas: "header" "section" "section" "section" "section" "section" "section" "footer";
+  
+    >
+      .header{
+        grid-area: header
+      }
+      .footer{
+        grid-area: footer
+      }
+      .row{
+        grid-area: section
+      }
+    }
+  .row, .col-sm-6{
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr;
+    grid-template-rows: 0.5fr 0.05fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 0%;
+  }
+  .accordion-button{
+    font-size: 2rem;
+    font-family: Optima;
+    text-align: center;
+  
+    &:not(.collapsed){
+      background-color: #f3c3f3;
+    }
+    &:focus{
+      border-color: #f3c3f3;
+    }
+  }

@@ -1,0 +1,38 @@
+$colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
+@mixin text($position, $fontS, $fontF){
+  text-align: $position;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  .contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacto__button{
+    @extend .contacto__email;
+    color: #fafafa;
+    padding: 0.5rem;
+    margin-right: 8rem;
+    margin-top: 1%;
+    &:hover{
+      background-color: #56118b;
+    }
+  }
+  .contacto__email, .contacto__nombre, .contacto__duda{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #662e91;
+    font-size: 1rem;
+  }

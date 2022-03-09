@@ -1,0 +1,57 @@
+$colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
+@mixin text($position, $fontS, $fontF){
+  text-align: $position;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+h1{
+  @include text(center, 9rem, Optima);
+  color: #f3c3f3;
+  text-shadow: 0.2rem 0.2rem 0.2rem #b884ca;
+}
+p{
+  @include text(center, 1rem, Arial);
+}
+h3{
+  @include text(center, 2rem, Optima);
+}
+h2{
+  @include text(center, 3rem, Optima);
+}
+img{
+  display: block;
+  margin: auto;
+}
+table{
+  width: 70%;
+  border: 0.1rem solid #662e91;
+  margin: auto;
+  padding: auto;
+}
+th{
+  text-align: center;
+}
+td{
+  text-align: center;
+  border: 0.1rem solid;
+}
+footer{
+  background-color: map-get($colors, violeta);
+}

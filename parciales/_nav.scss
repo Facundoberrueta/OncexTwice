@@ -1,0 +1,82 @@
+$colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
+@mixin text($position, $fontS, $fontF){
+  text-align: $position;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  .navbar-lightno, .bg-lightno, .dropdown-menu{
+    background-color: #662e91;
+    font-family: Optima;
+    color: #f3c3f3;
+    text-decoration: none;
+    image-orientation: initial;
+  }
+  .navbar-toggler-icon, .navbar-toggler, .navbar-toggler-icon:visited, .navbar-toggler:visited{
+    border: solid 0.1rem #f3c3f3;
+    border-radius: 25%;
+  }
+  .dropdown-item:visited, .nav-link:visited, .navbar-brand:visited{
+    background-color: #662e91;
+    color: #f3c3f3;
+  }
+  .dropdown-item{
+    &:hover, &:focus:hover{
+      color: #f3c3f3;
+      background-color: #551d80;
+  }
+  }
+  .nav-link{
+    &:hover:hover, &:focus:hover{
+      color: #f3c3f3;
+      background-color: #551d80;
+  }
+  }
+  .navbar-brand:hover{
+    color: map-get($colors, rosa);
+    background-color: map-get($colors, violetaOsc);
+  }
+  .dropdown-item{
+    &:link, &:focus:link{
+      text-decoration: none;
+      color: #f3c3f3;
+  }
+  }
+  .nav-link{
+    &:hover:link, &:focus:link{
+      text-decoration: none;
+      color: #f3c3f3;
+  }
+  }
+  a{
+    &:visited{
+      color: map-get($colors, rosa);
+  }
+    &:hover{
+      color: map-get($colors, violetaOsc);
+  }
+  &:link{
+  text-decoration: none;
+  color: map-get($colors, rosa);
+  }
+  }
+  .navegador__opcion{
+    display: inline;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .footer__creditos{
+    text-align: left;
+    color: #f3c3f3;
+  }

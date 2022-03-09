@@ -1,0 +1,91 @@
+$colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
+@mixin text($position, $fontS, $fontF){
+  text-align: $position;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+@mixin titlesong($color, $shadow){
+  color: $color;
+  text-shadow: $shadow;
+}
+  @mixin size($width, $height){
+    width: $width;
+    height: $height;
+  }
+  @mixin maxsize($mwidth, $mheight) {
+    max-width: $mwidth;
+    max-height: $mheight;  
+  }
+  .album__apartado:hover{
+    transform: scale(1.1, 1.1);
+  }
+  .title__tsb{
+    @include titlesong(#97303f, 0.2rem 0.2rem 0.2rem #f5e8df);
+  }
+  .title__pt{
+    @include titlesong(#23add8, 0.1rem 0.1rem 0.1rem #79dfe8);
+  }
+  .title__tc{
+    @include titlesong(#f15a94,0.1rem 0.1rem 0.1rem #f6c69a);
+  }
+  .title__tcc{
+    @include titlesong(#e9532a, 0.1rem 0.1rem 0.1rem #edc066);
+  }
+  .title__s{
+    @include titlesong(#c74061,  0.1rem 0.1rem 0.1rem #d1b19a);
+  }
+  .title__tt{
+    @include titlesong(#66aee6,  0.1rem 0.1rem 0.1rem #babbbb);
+  }
+  .title__mnh{
+    @include titlesong(#077751, 0.1rem 0.1rem 0.1rem #cbcd9e);
+  }
+  .title__wil{
+    @include titlesong(#cc0600, 0.1rem 0.1rem 0.1rem #ffbfb8);
+  }
+  .title__sn{
+    @include titlesong(#cb293a, 0.1rem 0.1rem 0.1rem #d09f7c);
+  }
+  .title__yoy{
+    @include titlesong(#d9191b, 0.1rem 0.1rem 0.1rem #b7b5bf);
+  }
+  .title__fy{
+    @include titlesong(#f539aa, 0.1rem 0.1rem 0.1rem #e0dfe0);
+  }
+  .title__fs{
+    @include titlesong(#c19a60, 0.1rem 0.1rem 0.1rem #e4d5a9);
+  }
+  .title__mnm{
+    @include titlesong(#ceb04f, 0.1rem 0.1rem 0.1rem #d3a999);
+  }
+  .title__ewo{
+    @include titlesong(#3d383b, 0.1rem 0.1rem 0.1rem #c5beb9);
+  }
+  .title__tol{
+    @include titlesong(#133f96, 0.1rem 0.1rem 0.1rem #eae3dc);
+  }
+  .title__fol{
+    @include titlesong(#1a252c, 0.1rem 0.1rem 0.1rem #a4b7d2)
+  }
+  .song__list{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .twice__img{
+    width: 84.3rem;
+  }
+  .integrantes__flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-content: space-evenly;
+    align-items: space-evenly;
+    gap: 5rem;
+    margin: 2rem;
+    justify-content: space-around;
+    margin-left: 7%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    text-align: center;
+  }
