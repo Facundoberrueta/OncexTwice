@@ -31,7 +31,7 @@ $colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
       margin-bottom: 1rem;
     }
     .fandom__foto{
-      max-width: 768px;
+      max-width: 48rem;
       height: 20rem;
     }
     .integrantes__flex{
@@ -43,7 +43,7 @@ $colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
       justify-content: space-around;
     }
     .twicee__img{
-      @include maxsize(768px, 570px);
+      @include maxsize(48rem, 35.625rem);
     }
     .debut__imgheader, .debut__img{
       @include size(100%, auto);
@@ -61,7 +61,7 @@ $colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
       margin-bottom: 1rem;
     }
     .fandom__foto{
-      max-width: 425px;
+      max-width: 26.563rem;
       height: 18rem;
     }
     .integrantes__flex{
@@ -73,11 +73,11 @@ $colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
       justify-content: space-around;
     }
     .img__twice{
-      max-width: 425px;
+      max-width: 26.563rem;
       height: 10rem;
     }
     .debut__img{
-      max-width: 425px;
-      height: 225px;
+      max-width: 26.563rem;
+      height: 14.063rem;
     }
   }
