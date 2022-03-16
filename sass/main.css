@@ -123,6 +123,10 @@ a:link {
   color: #f3c3f3;
 }
 
+.menu__footer {
+  margin-bottom: 0%;
+}
+
 .album__apartado:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
