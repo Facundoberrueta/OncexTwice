@@ -38,7 +38,7 @@ $colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
   .menues__img, .album__img, .integrantes__gif{
     @include size(15rem, 15rem);
   }
-  .index__grid{
+  .row{
     display: grid;
     grid-template-areas: "header" "section" "section" "section" "section" "section" "section" "footer";
   
@@ -53,7 +53,7 @@ $colors: ("violeta": #662e91, "violetaOsc": #551d80, "rosa" :#f3c3f3);
         grid-area: section
       }
     }
-  .row, .col-sm-6{
+  .row{
     display: grid;
     grid-template-columns: 1.3fr 1.3fr;
     grid-template-rows: 0.5fr 0.05fr;
